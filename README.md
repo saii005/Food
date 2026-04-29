@@ -1,18 +1,64 @@
-# React + Vite
+# Food Recipe App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Vite application for browsing and searching recipes by name or cuisine.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetches recipe data from a public API
+- Search recipes by name or cuisine
+- Filter by unique cuisine types
+- Add recipes to a simple cart
+- View and remove cart items
 
-## React Compiler
+## Getting Started
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Requirements
 
-Note: This will impact Vite dev & build performances.
+- Node.js 18+ recommended
+- npm or yarn
 
-## Expanding the ESLint configuration
+### Install dependencies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+Open the URL shown in the terminal to view the app.
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Preview production build
+
+```bash
+npm run preview
+```
+
+## Available Scripts
+
+- `npm run dev` — Start Vite development server
+- `npm run build` — Build the app for production
+- `npm run preview` — Preview the production build locally
+- `npm run lint` — Run ESLint on the project files
+
+## Project Structure
+
+- `src/` — React source files
+- `src/App.jsx` — Main app component and recipe UI
+- `src/main.jsx` — React entry point
+- `public/` — Static assets
+
+## Notes
+
+- The app uses React 19 and Vite.
+- The current implementation stores cart items in local component state.
+- If you want to extend this app, consider adding cart persistence, item quantities, or a recipe details page.
